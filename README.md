@@ -147,6 +147,8 @@
 Полученные коэффициенты формируют матрицу преобразования M.
 
 Для RPCC общая реализация схожа.
+
+
 PCC2: 
 $Q = a_1 \cdot R + a_2 \cdot G + a_3 \cdot B + a_4 \cdot R^2 + a_5 \cdot G^2 + a_6 \cdot B^2 + a_7 \cdot R \cdot G + a_8 \cdot R \cdot B + a_9 \cdot G \cdot B$
 
