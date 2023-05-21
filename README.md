@@ -128,7 +128,8 @@
 
 ## Описание алгоритма
 
-Матрица преобразования в PCC (Polynomial Color Correction) вычисляется на основе средних цветовых значений блоков цветовой палитры для исходного и целевого изображений. Эта матрица позволяет выполнить цветовую коррекцию путем преобразования цветовых значений пикселей из одного изображения в цветовые значения пикселей другого изображения.
+Матрица преобразования в PCC (Polynomial Color Correction) вычисляется на основе средних цветовых значений блоков цветовой палитры для исходного и целевого изображений. 
+Эта матрица позволяет выполнить цветовую коррекцию путем преобразования цветовых значений пикселей из одного изображения в цветовые значения пикселей другого изображения.
 
 Процесс вычисления матрицы преобразования в PCC включает следующие шаги:
 
@@ -149,7 +150,8 @@ PCC2:
 $Q = a_1 \cdot R + a_2 \cdot G + a_3 \cdot B + a_4 \cdot R^2 + a_5 \cdot G^2 + a_6 \cdot B^2 + a_7 \cdot R \cdot G + a_8 \cdot R \cdot B + a_9 \cdot G \cdot B$
 
 PCC3: 
-$Q = a_1 \cdot R + a_2 \cdot G + a_3 \cdot B + a_4 \cdot R^2 + a_5 \cdot G^2 + a_6 \cdot B^2 + a_7 \cdot R \cdot G + a_8 \cdot R \cdot B + a_9 \cdot G \cdot B + a_{10} \cdot R^3 + a_{11} \cdot G^3 + a_{12} \cdot B^3 + a_{13} \cdot R^2 \cdot G + a_{14} \cdot R^2 \cdot B + a_{15} \cdot G^2 \cdot R + a_{16} \cdot G^2 \cdot B + a_{17} \cdot B^2 \cdot R + a_{18} \cdot B^2 \cdot G + a_{19} \cdot R \cdot G \cdot B$
+$Q = a_1 \cdot R + a_2 \cdot G + a_3 \cdot B + a_4 \cdot R^2 + a_5 \cdot G^2 + a_6 \cdot B^2 + a_7 \cdot R \cdot G + a_8 \cdot R \cdot B + a_9 \cdot G \cdot B + a_{10} \cdot R^3 + a_{11} \cdot G^3 + a_{12} \cdot B^3 
++ a_{13} \cdot R^2 \cdot G + a_{14} \cdot R^2 \cdot B + a_{15} \cdot G^2 \cdot R + a_{16} \cdot G^2 \cdot B + a_{17} \cdot B^2 \cdot R + a_{18} \cdot B^2 \cdot G + a_{19} \cdot R \cdot G \cdot B$
 
 RPCC2: 
 $Q = a_1 \cdot R + a_2 \cdot G + a_3 \cdot B + a_4 \cdot \sqrt{R \cdot G} + a_5 \cdot \sqrt{G \cdot B} + a_6 \cdot \sqrt{R \cdot B}$
